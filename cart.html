@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-container h1 {
+            text-align: center;
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .total-container {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .button-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td>$29.99</td>
+                    <td>1</td>
+                    <td>$29.99</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>$39.99</td>
+                    <td>2</td>
+                    <td>$79.98</td>
+                </tr>
+                <tr>
+                    <td>Product 3</td>
+                    <td>$19.99</td>
+                    <td>1</td>
+                    <td>$19.99</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total-container">
+            Total: $129.96
+        </div>
+        <div class="button-container">
+            <button onclick="window.location.href='catalog.html';">Continue Shopping</button>
+            <button>Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
+
